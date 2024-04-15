@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Insert Details</title>
+      
+      
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous"> 
+      
+  <link rel="stylesheet" type="text/css" href="style.css">
+      
+  </head>
+  <body>	<br>	<br>
+    <div class="container" >
+      <div class="row">
+      <div class="col-md-3">
+            
+      </div>
+          
+      <div class="col-md-6 main">
+            
+        <form action="http://localhost:3000/sign_up" method="post">				 
+        <h1> Insert Details</Details> </h1>
+                
+        <label> Name  
+              <input class="box" type="text" name="name" id="name" placeholder="Name " required /></label> 
+              <label> Course
+              <select name="course">  
+                  <option value="Course">Course</option>  
+                  <option value="BCA">BCA</option>  
+                  <option value="BBA">BBA</option>  
+                  <option value="B.Tech">B.Tech</option>  
+                  <option value="MBA">MBA</option>  
+                  <option value="MCA">MCA</option>  
+                  <option value="M.Tech">M.Tech</option>  
+                  </select> </label>
+              
+              <label> Rollno
+              <input class="box" type="text" name="rollno" id="rollno" placeholder="Rollno " required /></label>
+        
+              <label> Internal Mark 1
+        <input class="box" type="text" name="i1" id="i1" placeholder="Intern1" required/></label>
+        
+              <label> Internal Mark 2
+        <input class="box" type="text" name="i2" id="i2" placeholder="Intern2 " required/></label>
+              
+              <label> Internal Mark 3
+              <input class="box" type="text" name="i3" id="i3" placeholder="Intern3" required/></label>
+  
+        <label> Total				
+        <input class="box" type="text" name="total" id="total" placeholder="Total " required/></label>
+              
+              <label> Average
+              <input class="box" type="text" name="avg" id="avg" placeholder="Average " required/></label>
+        <input type="submit" id="submitDetails" name="submitDetails" value="Submit" /><br><br>		        
+        <a id="b2" href="http://localhost:3000/api/marks" >Display</a>
+        </form>					
+      </div>			
+    </div>
+    </div><br><br>
+  </body>
+</html>
